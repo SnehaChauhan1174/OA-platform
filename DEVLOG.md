@@ -48,4 +48,20 @@ SELECT table_name FROM information_schema.tables
 WHERE table_schema = 'public';
 ```
 
+### Request Flow
+HTTP Request (Postman / React)
+↓
+JwtFilter — validates token on every request
+↓
+SecurityConfig — checks role permissions
+↓
+Controller — receives request, calls service
+↓
+Service — business logic
+↓
+Repository — DB query via JPA
+↓
+PostgreSQL — data stored/fetched
+↓
+Response back to client
 
