@@ -49,6 +49,7 @@ WHERE table_schema = 'public';
 ```
 
 ### Request Flow
+```
 HTTP Request (Postman / React)
 ↓
 JwtFilter — validates token on every request
@@ -64,4 +65,4 @@ Repository — DB query via JPA
 PostgreSQL — data stored/fetched
 ↓
 Response back to client
-
+```
