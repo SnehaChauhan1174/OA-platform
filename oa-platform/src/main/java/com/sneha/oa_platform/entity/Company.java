@@ -2,6 +2,8 @@ package com.sneha.oa_platform.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
@@ -34,4 +36,6 @@ public class Company {
 
     @Column(columnDefinition = "TEXT")
     private String description;
+
+    private LocalDateTime createdAt;
 }
