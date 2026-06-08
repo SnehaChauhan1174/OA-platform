@@ -66,3 +66,31 @@ PostgreSQL — data stored/fetched
 ↓
 Response back to client
 ```
+
+### 8th june
+admin company controller
+methods are 
+ - add
+ - get list of all companies
+ - get a company
+ - update
+ - delete
+
+now see regarding question bank many things gte dicussed
+what we are doing now
+Phase 1 — Static Bank (Build Now)
+This is your foundation. Everything else sits on top.
+Step 1: Question entity + TestCase entity
+Step 2: QuestionRepository + TestCaseRepository
+Step 3: QuestionService (add, tag, list)
+Step 4: AdminQuestionController (CRUD)
+Step 5: CompanyTopicWeight entity + CRUD
+Step 6: Static weighted sampling (pure SQL)
+Step 7: Seed 50-100 questions manually + via LLM script
+
+Phase 2 — RAG Layer on Top (After Platform Works)
+Step 1: Add pgvector extension to PostgreSQL
+in this question bank is like a knowledge system and rag will retrieve from this now the question is how we can work for testcase and other things 
+
+
+   
